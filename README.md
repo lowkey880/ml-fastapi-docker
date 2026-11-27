@@ -29,3 +29,28 @@ Example body:
 ```json
 {"sepal_length": 5.1, "sepal_width": 3.5, "petal_length": 1.4, "petal_width": 0.2}
 ```
+
+## MLflow
+
+```bash
+python train.py
+mlflow ui
+```
+
+Open http://127.0.0.1:5000
+
+## Streamlit
+
+Start the API first:
+
+```bash
+uvicorn main:app --reload
+```
+
+Then, in a second terminal:
+
+```bash
+streamlit run app.py
+```
+
+Open http://localhost:8501
